@@ -12,7 +12,7 @@
 
 #include "get_next_line.h"
 
-int	check_and_indxline(char *str)
+static int	check_and_indxline(char *str)
 {
 	int		i;
 
@@ -26,7 +26,7 @@ int	check_and_indxline(char *str)
 	return (-1);
 }
 
-char	*shift_buf(char *str, long n)
+static char	*shift_buf(char *str, long n)
 {
 	int	i;
 
@@ -46,7 +46,7 @@ char	*shift_buf(char *str, long n)
 	return (str);
 }
 
-char	*read_and_set(int fd, char *buffer)
+static char	*read_and_set(int fd, char *buffer)
 {
 	char	*res;
 	int		index_nl;
